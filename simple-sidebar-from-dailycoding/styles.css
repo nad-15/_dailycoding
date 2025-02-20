@@ -15,7 +15,7 @@ body {
 
 .sidebar {
     background-color: rgb(39, 37, 37);
-    height: 10vw;
+    height: 10vh;
     line-height: 10vh;
     transform: translateX(-10vw);
     transition: 1s;
