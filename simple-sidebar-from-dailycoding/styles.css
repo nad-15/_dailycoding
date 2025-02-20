@@ -1,0 +1,35 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.container {
+    position: fixed;
+    top: 15vh;
+    height: 40vh;
+    width: 20vw;
+    color: white;
+    text-align: right;
+}
+
+.sidebar {
+    background-color: rgb(39, 37, 37);
+    height: 10vw;
+    line-height: 10vh;
+    transform: translateX(-10vw);
+    transition: 1s;
+    padding-right: 1.5vw;
+    cursor: pointer;
+
+}
+
+.sidebar:nth-child(even){
+    background-color: rgb(57, 57, 55);
+}
+
+.sidebar:hover {
+    transform: translateX(-0.2vw);
+    padding-right: 7vw;
+    border: 2px solid white;
+}
