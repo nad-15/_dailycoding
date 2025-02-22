@@ -1,0 +1,61 @@
+body {
+    padding: 0;
+
+}
+
+body * {
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.oval {
+    height: 25px;
+    aspect-ratio: 2/1;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.semi-circle {
+    width: 0;
+    height: 0;
+    border-top: 50px solid green;
+    /* border-left: 50px solid red; */
+    border-right: 50px solid transparent;
+    border-radius: 50%;
+    rotate: 45deg;
+
+}
+
+/* the code below is from daily coding */
+
+.semi-circle2 {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 100px 100px 0 0;
+}
+
+/* .semi-circle2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100px;
+    background-color: green;
+} */
+
+.semi-circle2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100px;
+    background-color: green;
+}
