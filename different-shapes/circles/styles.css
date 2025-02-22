@@ -42,7 +42,16 @@ body * {
     border-radius: 100px 100px 0 0;
 }
 
-/* .semi-circle2::before {
+.semi-circle2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100px;
+    background-color: green;
+}
+
+/* .semi-circle2::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -50,12 +59,53 @@ body * {
     width: 100px;
     background-color: green;
 } */
+/* 
+.raindrop {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    border-top: 50px solid blue;
+    border-left: 50px solid transparent;
+    rotate: -45deg;
+}
 
-.semi-circle2::after {
+.raindrop::before {
+    content: "";
+    rotate: 45deg;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: 0;
+    border-top: 50px solid blue;
+    border-right: 25px solid green;
+    border-left: 25px solid red;
+} */
+
+.raindrop {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 100px 100px 0 0;
+}
+.raindrop::before {
     content: "";
     position: absolute;
     bottom: 0;
     height: 50px;
     width: 100px;
-    background-color: green;
+    background-color: white;
+}
+
+.raindrop::before {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    width: 0px;
+    height: 0px;
+    border-top: 100px solid red;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    
 }
